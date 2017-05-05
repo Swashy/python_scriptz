@@ -9,6 +9,9 @@ from termcolor import colored
 import re
 import time
 
+# Simple script to add aliases/forwards for addresses in iRedAdmin. Pro version allows this through web interface, but not the free version, so this script gets around that
+# by directly modifing the database.
+
 def main():
   user=getpass.getuser()
   if user != 'admin':
